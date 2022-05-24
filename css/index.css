@@ -1,0 +1,99 @@
+/* background-color:red; */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container{
+    width: 420px;
+    height: 90vh;
+    background-color: #333;
+}
+.active{
+    color: #fff !important;
+}
+/* mobile view */
+@media only screen and (max-width:420px) {
+    .container{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    .videoFilter{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        height: 35px;
+        line-height: 35px;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        align-content: center;
+        justify-content: center;
+
+    }
+    .videoFilter>a{
+        color: #999;
+    }
+
+    a.btn{
+        padding: 5px 10px;
+        font-weight: bold;
+    }
+    .videoContainer{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .videoContainer>video{
+        width: 100%;
+        height: 100%;
+    }
+    #videoStatus{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #videoStatus>i{
+        font-size: 40px;
+        color: #fff;
+        z-index: inherit;
+
+    }
+    .videoControls{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+        width: 100%;
+        background-color: #333;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .vConIcon{
+        font-size: 22px;
+        color: aliceblue;
+        font-weight: bold;
+    }
+    .sideVideoControls>a{
+        color: aliceblue;
+        margin: 20px 2px;
+    }
+    .sideVideoControls{
+        position: absolute;
+    height: 350px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    
+        
+
+    }
+}
